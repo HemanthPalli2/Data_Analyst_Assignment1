@@ -1,0 +1,7 @@
+total_minutes = int(input()) #Reading input from the user as integer....
+hours = total_minutes//60  # Floor Divisior(//): It truncates the fractional part of the division, ensuring the result is always an integer.
+minutes = total_minutes%60 # Remainder(%):The remainder is the value left after dividing dividend by divisor.
+if hours == 1: #Checks whether hours should be singular or plural.
+    print("{} hr {} mins".format(hours,minutes)) # Instead of using string concatination, I used string.format() template literal in Python.
+else:
+    print("{} hrs {} mins".format(hours,minutes))
