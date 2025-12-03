@@ -1,0 +1,9 @@
+string = input().strip() # Reading input from the user as string. And used string.strip() method to make sure it doesn't contain any trailing & leading spaces.
+# I didn't converted the srting neither uppercase nor lowercase. So it works as case-insensitive. If we want it in case-sensitive we need to convert the input string into .upper() or .lower() string methods based on our requirement.
+result = "" 
+for char in string: # Iterating over each character in string.
+    if char not in result: #checks if char not present in result.
+        result += char # cpmes true adds the character to the result string.
+    else:
+        pass # Used pass to make sure code looks perfect.
+print(result) # printed the result...
